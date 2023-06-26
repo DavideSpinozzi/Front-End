@@ -1,0 +1,112 @@
+.container{
+    display: flex;
+}
+body{
+    margin: 0;
+}
+header{
+    background-color: antiquewhite;
+    flex: 0 0 12%;
+}
+nav{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
+    justify-content: space-around;
+    height: 60%;
+    
+}
+nav button{
+    width: 80%;
+    color: #752305;
+    background-color: #FFDF7F;
+    border-radius: 200px;
+    border: none;
+    padding: 2.5rem;
+    font-size: larger;
+    font-weight: bold;
+}
+#firstButton{
+    display: flex;
+    font-size:40px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.8rem;
+}
+#logo {
+  width: 30%;
+}
+main{
+    flex: 0 0 88%;
+    color: #752305;
+}
+#firstSection h1{
+    margin: 1rem;
+}
+#Cards{
+    display: flex;
+    justify-content: space-around;
+}
+.SingleCards{
+    width: 18%;
+    background-color: antiquewhite;
+    border-radius: 40px;
+    color: #752305;
+    text-align: center;
+    box-sizing: content-box;
+}
+.SingleCards div img{
+    width: 100%;
+    height: 60%;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+.Writings{
+    display: flex;
+}
+.Description{
+    flex: 0 0 70%;
+}
+.Description p{
+    margin-top: 0;
+}
+.Description h3{
+    margin-bottom: 0;
+}
+.Price{
+    flex: 0 0 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.SingleCards button{
+    color: #752305;
+    background-color: #FFDF7F;
+    border-radius: 40px;
+    border: none;
+    padding: 1rem;
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    width: 50%;
+}
+#secondSection{
+    margin: 1rem;
+}
+#Aside{
+    background-color: antiquewhite;
+    display: flex;
+}
+#Img{
+    flex: 0 0 50%;
+}
+#Img img{
+    margin: auto;
+    margin: 1rem;
+    width: 95%;
+}
+#secondSection{
+    flex: 0 0 50%;
+}

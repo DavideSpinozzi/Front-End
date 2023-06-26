@@ -1,0 +1,47 @@
+html {
+  height: 100%;
+}
+body {
+  background-color: #666666;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+div {
+  margin: 0 1rem;
+  width: 20%;
+  padding: 6.5rem 1rem;
+  box-shadow: 4px 5px 5px 0 rgba(63, 63, 63, 0.5);
+  transition: all 200ms;
+}
+div p,
+h2 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow", sans-serif;
+  font-size: x-large;
+  text-align: center;
+}
+.giallo {
+  background: linear-gradient(to bottom, #c9ba69, #7c7a7a 150%);
+  transform: rotate(-5deg);
+}
+.verde {
+  background: linear-gradient(to bottom, #6bd679, #7c7a7a 150%);
+  transform: rotate(5deg);
+}
+.viola {
+  background: linear-gradient(to bottom, #cd7ed4, #7c7a7a 150%);
+  transform: rotate(-8deg);
+}
+div:hover{
+    z-index: 1;
+    transform: scale(1.2) rotate(0deg)
+}

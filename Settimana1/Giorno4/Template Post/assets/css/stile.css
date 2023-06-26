@@ -1,0 +1,211 @@
+/* IMPOSTAZIONI GENERALI */
+
+
+* {
+    font-family: 'Poppins', sans-serif;
+    padding: 3em;
+    line-height: 1em;
+
+}
+
+hr {
+    display: none;
+}
+
+body {
+    background-image: url(../img/sfondo.png);
+    background-color: white;
+
+}
+
+
+
+/* HEADER */
+
+header {
+    margin: 1em;
+    padding: 4em;
+    background-image: url(../img/sfondo.png);
+    background: linear-gradient(#009abe, #016d88);
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5em;
+}
+
+header nav a:link, a :active {
+    text-decoration: none;
+    color: white;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+header img {
+    padding-bottom: 1em;
+}
+
+header nav {
+    padding-top: 2em;
+}
+
+/* MAIN */
+
+main {
+    background-color: white;
+    border:2px solid lightgray;
+    box-shadow: 1px 1px 2px 0px #292929;
+    margin: 0rem 3rem;
+    padding: 0.5em;
+    line-height: 1.5em;
+
+}
+
+main h1 {
+    font-size: 1.8em;
+    font-weight: bold;
+    line-height: 1.5em;
+    padding: 0.5em 0em;
+}
+
+.colorenovita{ color: #a4a3a2;
+    padding-bottom: 1.5em;}
+
+main article :nth-child(3) {
+    padding-bottom: 1em;
+}
+
+main article :nth-child(5) {
+    padding-bottom: 1em;
+}
+
+main p strong {
+    color: #a8457b;
+    font-weight: bold;
+}
+
+.lista {
+    padding: 2em;
+}
+main article ul code{
+    background-color: #e4e1e2;
+    border: 1px solid #7b7f84;
+    border-radius: 7px;
+}
+
+main article table td, th{
+    padding: 1.5em;
+    text-align: center;
+}
+main article caption {
+    padding-top: 1em;
+    font-weight: bold;
+    font-style: italic;
+}
+main article table thead {
+    color: white;
+    background: linear-gradient(#3d6bc8, #3769d2);
+}
+main article table tbody tr:nth-child(even){
+    background-color: #e1e3e3;
+    
+}
+
+main p a{
+    color: #66bbd7;
+    font-weight: bold;
+}
+
+main iframe {
+
+margin: 1em;
+    border-radius: 1.5em;
+}
+
+
+main section{
+    background-color: #e5e2e4;
+    
+}
+
+main section h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 1em;
+}
+main section p {
+
+    padding: 1em;
+
+}
+
+main section input{
+    margin: 0em  2em;
+    padding: 2px;
+    border-width: 1px;
+    border-bottom-style: dashed;
+}
+main section button {
+    padding: 0.5em;
+    color: white;
+    background-color: #3b6ad3;
+}
+main aside h2 {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding: 1em;
+}
+
+main aside div {
+    background-color: #e5e2e4;
+    padding: 1em;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #91969c;
+    margin: 1em;
+}
+
+main div a{color: #66bbd7;
+    font-weight: bold;
+
+
+}
+main aside p:last-of-type{
+    padding-top: 1em;
+    font-size: small;
+    text-align:right;
+}
+
+/* ELEMENTI NEL MAIN - ARTICLE */
+
+/* TABELLE */
+
+/* FORM */
+
+/* ELEMENTI NELL' ASIDE */
+
+/* FOOTER */
+
+footer{
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5em;
+    text-align: center;
+    color: white;
+    background: linear-gradient(#015466, #2d3537);
+    padding: 1em;
+    margin: 1em;
+}
+footer p {
+    padding-bottom: 1em;
+}
+footer a {
+    color: #d71adf;
+    font-weight: bold;
+}

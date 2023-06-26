@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="aggiungiForm">
+      <label for="petName">Nome:</label>
+      <input type="text" id="petName" />
+      <br />
+      <label for="ownerName">Proprietario:</label>
+      <input type="text" id="ownerName" />
+      <br />
+      <label for="species">Specie:</label>
+      <input type="text" id="species" />
+      <br />
+      <label for="breed">Razza:</label>
+      <input type="text" id="breed" />
+      <button type="submit">Aggiungi</button>
+    </form>
+    <h2>tutti gli Animali</h2>
+    <div id="listaAnimali"></div>
+    <script>
+      class User {
+        constructor(firstName, lastName, age, location) {
+          this.firstName = firstName;
+          this.lastName = lastName;
+          this.age = age;
+          this.location = location;
+        }
+        ComparaEta(altraPersona) {
+          if (this.age > altraPersona.age) {
+            return `${this.firstName} e piu vecchio di ${altraPersona.firstName}.`;
+          } else if (this.age < altraPersona.age) {
+            return `${this.firstName} e piu giovane di ${altraPersona.firstName}.`;
+          } else {
+            return `${this.firstName} ha la stessa eta di ${altraPersona.firstName}.`;
+          }
+        }
+      }
+
+      const persona1 = new User("Peppino", "Merda", 2, "venezia");
+      const persona2 = new User("Coglionazzo", "Assurdo", 6, "genova");
+
+      console.log(persona1.ComparaEta(persona2));
+      console.log(persona2.ComparaEta(persona1));
+      console.log(persona1.ComparaEta(persona1));
+      ////////////////////////////////////////////////////////////////////////////////////
+      class Pet {
+        constructor(petName, ownerName, species, breed) {
+          this.petName = petName;
+          this.ownerName = ownerName;
+          this.species = species;
+          this.breed = breed;
+        }
+        ComparaPadrone(altroAnimale) {
+          if (this.ownerName === altroAnimale.ownerName) {
+            return true;
+          } else return false;
+        }
+      }
+      const aggiungiForm = document.getElementById("aggiungiForm");
+      const listaAnimali = document.getElementById("listaAnimali");
+
+      aggiungiForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        const petName = document.getElementById("petName").value;
+        const ownerName = document.getElementById("ownerName").value;
+        const species = document.getElementById("species").value;
+        const breed = document.getElementById("breed").value;
+
+        const pet = new Pet(petName, ownerName, species, breed);
+        console.log(pet);
+        const aggiungiAnimali = (pet) => {
+          const petDiv = document.createElement("div");
+          petDiv.innerHTML = `
+      <strong>Nome:</strong> ${pet.petName}<br>
+      <strong>Proprietario:</strong> ${pet.ownerName}<br>
+      <strong>Specie:</strong> ${pet.species}<br>
+      <strong>Razza:</strong> ${pet.breed}<br>
+    `;
+          listaAnimali.appendChild(petDiv);
+        };
+        aggiungiAnimali(pet);
+      });
+      const pet1 = new Pet('franco', 'luca' ,'cane' ,'labrador')
+      const pet2 = new Pet('franco', 'luca' ,'cane' ,'labrador')
+      console.log(pet1.ComparaPadrone(pet2))
+
+    </script>
+  </body>
+</html>

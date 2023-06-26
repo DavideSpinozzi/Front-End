@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <label for="name">Nome</label>
+      <input type="text" id="nome" placeholder="il tuo nome" />
+      <button id="salva">Salva</button><button id="rimuovi">Rimuovi</button>
+    </form>
+    <p>Timer: <span id="timer"></span> secondi</p>
+    <script>
+      const nome = document.getElementById("nome");
+      const salva = document.getElementById("salva");
+      const rimuovi = document.getElementById("rimuovi");
+      salva.onclick = function (e) {
+        e.preventDefault();
+        localStorage.setItem("nome", nome.value);
+        nome.value = "";
+      };
+      rimuovi.onclick = function (e) {
+        e.preventDefault();
+        localStorage.removeItem("nome");
+        nome.value = "";
+      };
+      window.onload = function () {
+        let valoreLocalStorage = localStorage.getItem("nome");
+        if (valoreLocalStorage) {
+          nome.value = valoreLocalStorage;
+        }
+      };
+      //////////////////////////////////////////
+      const timer = document.getElementById("timer");
+      let tempo = sessionStorage.getItem("tempo") || 0;
+
+      timer.innerText = tempo;
+
+      const tempoPassato = () => {
+        tempo++;
+        timer.innerText = tempo;
+        sessionStorage.setItem("tempo", tempo);
+      };
+
+      setInterval(tempoPassato, 1000);
+
+      window.addEventListener("beforeunload", function () {
+        sessionStorage.setItem("tempo", tempo);
+      });
+    </script>
+  </body>
+</html>

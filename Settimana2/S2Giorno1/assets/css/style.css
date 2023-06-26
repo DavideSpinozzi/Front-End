@@ -1,0 +1,21 @@
+body{
+    background-color: #415fe1;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    margin-left: 20rem;
+    margin-right: 20rem;    
+
+    
+}
+img {
+    width: 30%;
+    height: 30%;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+figure :hover {
+    color: black;
+    text-decoration: underline;
+}

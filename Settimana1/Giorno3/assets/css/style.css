@@ -1,0 +1,48 @@
+header {
+  text-align: center;
+}
+#strisciabianca {
+  color: #79aad4;
+  background-color: aliceblue;
+  padding-top: 1.3rem;
+  padding-bottom: 1.3rem;
+  border-top: solid yellow 1px;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: lightskyblue;
+  background-image: linear-gradient(to right, #d2d387 0%, #79aad4 100%);
+  margin: 0px;
+  margin-top: 20px;
+}
+main {
+  width: 50%;
+  margin: 0 auto;
+}
+.primodiv {
+  text-align: center;
+}
+#sottotitoloimg {
+  opacity: 0.5;
+  margin-top: 8px;
+}
+#scrittarossa {
+  padding-left: 20px;
+  border-left: solid yellow 1px;
+  color: red;
+}
+hr {
+  color: white;
+}
+footer {
+  width: 50%;
+  margin: 0 auto;
+}
+iframe {
+  border: 0px;
+}
+.padding {
+  box-shadow: 2px 2px 2px 1px gray;
+  margin-left: 50px;
+  margin-right: 50px;
+}
