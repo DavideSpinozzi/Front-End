@@ -1,5 +1,15 @@
 # ProgettoAngular2
 
+Installare:
+
+    Angular
+    Angular JWT
+    JSON Server
+    JSON Server Auth
+    Concurrently
+    Bootstrap
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.11.
 
 ## Development server
